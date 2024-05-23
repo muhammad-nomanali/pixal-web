@@ -142,9 +142,15 @@
   background-color: orangered;
   padding: 10px ;
   margin-top: 30px;
+  font-size: 22px;
 }
 .tokenomics-container .tokenomics-content h2{
+  font-size: 20px;
+
+}
+.tokenomics-container .tokenomics-content .supply{
     font-size: 20px;
+    color: black;
 }
 .tokenomics-container .tokenomics-content{
     padding: 10px 30px;
