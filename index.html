@@ -9,59 +9,72 @@
       rel="icon"
       href="./asset/images/WhatsApp Image 2024-05-20 at 7.59.06 PM.jpeg"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
   </head>
   <body>
     <!-- navbar start -->
 
-    <section>
-      <div class="navbar-section">
-        <div class="navbar-container">
-          <div class="navbar-content">
-            <div class="navbar-brand">
-              <div class="navbar-img">
-                <img
-                  src="./asset/images/WhatsApp Image 2024-05-20 at 7.59.06 PM.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="navbar-heading">
-                <h2>Pixelmemecat</h2>
-              </div>
-            </div>
-            <div class="navbar-lists">
-              <ul>
-                <li><a href="#tokenomics">tokenomics</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#memes">memes</a></li>
-                <li><a href="#contact">contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-btn">
-              <button>buy $PMC</button>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-lg" id="navbar-sec">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./asset/images/WhatsApp Image 2024-05-20 at 7.59.06 PM.jpeg" alt="" width="16%">
+        <span class="fs-4">Pixelmemecat</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#tokenomics">tokenomics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">memes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#contact">contact</a>
+            </li>
+           
+          </ul>
+          <form  role="search">
+            
+            <button class="btn btn-outline-success" ><a style="text-decoration: none; color: white;" href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=4LP5JKsyKC5pSAoodwcZnDCSK2ggsMcZvHKoo7HCPDCV&fixed=in&inputMint=sol&outputMint=4QeY8uNYrHJaaypEiDV3RfPk1er8P1CovWD74nw3ELtx">buy$pmc</a></button>
+          </form>
         </div>
       </div>
-    </section>
+    </nav>
     <!-- navbar end -->
     <!-- hero section start -->
     <section>
       <div class="hero-section">
         <div class="hero-container">
           <div class="hero-contant-container">
-            <div class="hero-images">
+            <div class="hero-images" id="heroes-images">
               <div class="twitter-img">
-                <img src="./asset/images/twitter.webp" alt="" />
-                <img src="./asset/images/telegram.webp" alt="" />
-                <img src="./asset/images/CoinGecko_logo.webp" alt="" />
-                <img src="./asset/images/dexscreener_322a5a2d.webp" alt="" />
-                <img
+              
+                <a href=""> <img src="./asset/images/twitter.webp" alt="" /></a>
+                <a href="https://t.me/PMCSOL"> <img src="./asset/images/telegram.webp" alt="" /></a>
+               
+                <a href="https://www.geckoterminal.com/solana/pools/3rmUQiq53ed1HGDbQVYxfxVcC9yhAovXz8QSoGESdFU4?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"> <img src="./asset/images/CoinGecko_logo.webp" alt="" /></a>
+               
+                <a href="https://dexscreener.com/solana/3rmuqiq53ed1hgdbqvyxfxvcc9yhaovxz8qsogesdfu4"> <img src="./asset/images/dexscreener_322a5a2d.webp" alt="" /></a>
+               
+                <a href="  https://www.dextools.io/app/en/solana/pair-explorer/3rmUQiq53ed1HGDbQVYxfxVcC9yhAovXz8QSoGESdFU4?t=1716622369622"> <img
                   src="./asset/images/5faab3_e47ba51a5c234e1fb39ab73547c6813e~mv2.webp"
                   alt=""
-                />
+                /></a>
               </div>
             </div>
-            <div class="hero-content">
+
+            <div class="hero-content" id="hero-contant">
               <p>
                 If you rise above being just a cat, if you commit yourself to a
                 dream, and if nothing can stop you, then you become something
@@ -74,11 +87,12 @@
       </div>
     </section>
     <!-- third section start -->
-    <section id="tokenomics">
+     <section id="tokenomics">
       <div class="tokenomics-section">
         <h2>tokenomics</h2>
         <div class="tokenomics-container">
           <div class="tokenomics-img">
+           
             <img
               src="./asset/images/WhatsApp Image 2024-05-20 at 7.59.06 PM.jpeg"
               alt=""
@@ -86,11 +100,10 @@
           </div>
           <div class="tokenomics-content">
             <p>Community takeover |Liquidity Burned | Ownership Renounced</p>
-            <h2>contract address</h2>
             <p class="adress">
-          4QeY8uNYrHJaaypEiDV3RfPk1er8P1CovWD74nw3ELtx
+              4QeY8uNYrHJaaypEiDV3RfPk1er8P1CovWD74nw3ELtx
             </p>
-            <h2 class="supply">Total Supply : 3,000,000,000</h2>
+            <h2>Total Supply : 3,000,000,000</h2>
             <button>
               <a
                 href="https://solscan.io/token/4QeY8uNYrHJaaypEiDV3RfPk1er8P1CovWD74nw3ELtx"
@@ -102,7 +115,7 @@
       </div>
     </section>
     <!-- about section -->
-    <section id="about">
+     <section id="about">
       <div class="about-section">
         <h2>about</h2>
         <p>
@@ -111,28 +124,36 @@
           needed he sniffs catnip and kicks some ass.
         </p>
         <p>
-          “Maybe that's what PIXELMEME CAT is about. Not winning, but failing, and
+          “Maybe that's what PIXELMEME Cat is about. Not winning, but failing, and
           getting back up. Knowing he'll fail, fail a thousand times, but still
           won't give up”
         </p>
         <span>Pixelmemecat</span>
       </div>
-    </section>
+    </section> 
 
     <!-- footer -->
-    <section id="contact">
+     <section id="contact">
       <div class="footer-section">
         <div class="footer-content">
           <div class="footer-images">
-            <img src="./asset/images/telegram.webp" alt="" />
-            <img src="./asset/images/twitter.webp" alt="" />
+            <a href="https://t.me/PMCSOL"><img src="./asset/images/telegram.webp" alt="" /></a>
+            <a href="https://x.com/PMcatsol"><img src="./asset/images/twitter.webp" alt="" /></a>
+            
           </div>
           <div class="footer-content">
-            <h2>info@Pixelmemecat.lol</h2>
+            <h2>info@Pixelmemecat.io</h2>
             <h4>2024 @Pixelmemecat</h4>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

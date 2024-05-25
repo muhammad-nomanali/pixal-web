@@ -8,51 +8,19 @@
   padding: 0;
   font-family: "kemco";
 }
-.navbar-section {
+#navbar-sec {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
   background-color: #a9a9a9;
 }
-.navbar-section .navbar-container {
-  width: 80%;
-  margin: 0 auto;
-}
-.navbar-section .navbar-container .navbar-content {
-  display: flex;
-  align-items: center;
-}
-.navbar-section .navbar-container .navbar-brand {
-  display: flex;
-  align-items: center;
-  width: 40%;
-}
-.navbar-section .navbar-container .navbar-brand .navbar-img {
-  width: 20%;
-}
-.navbar-section .navbar-container .navbar-brand .navbar-img img {
-  width: 100%;
-}
-.navbar-section .navbar-container .navbar-brand .navbar-content h2 {
-  font-size: 24px;
-  padding-top: 16px;
-}
 
-.navbar-section .navbar-container .navbar-lists ul {
-  display: flex;
-  align-items: center;
+ul li .nav-link {
+  text-decoration: none;
+  color: black;
 }
-.navbar-section .navbar-container .navbar-lists ul li {
-  list-style-type: none;
-  margin-right: 20px;
-  cursor: pointer;
+ul li .nav-link:hover {
+  color: orangered ;
 }
-.navbar-section .navbar-container .navbar-lists ul li a{
-    text-decoration: none;
-    color: black;
-}
-.navbar-section .navbar-container .navbar-lists ul li a:hover{
-    color: orangered;
-}
-.navbar-section .navbar-container button {
+.navbar button {
   padding: 10px 30px;
   text-transform: uppercase;
   font-size: 18px;
@@ -66,15 +34,22 @@
 /* hero section start */
 .hero-section {
   background-color: black;
-  height: 100vh;
+  padding-bottom: 100px;
+ 
 }
 .hero-section .hero-container {
   width: 80%;
   margin: 0 auto;
+
+}
+.hero-contant-container{
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
 }
 .hero-section .hero-images {
   background-color: orangered;
-  width: 26%;
+  width: 30%;
   transform: translateY(80px);
   padding-bottom: 50px;
 }
@@ -90,12 +65,10 @@
 .hero-section .hero-images .twitter-img img {
   width: 100%;
   padding-top: 30px;
+
 }
 
-.hero-section .hero-contant-container {
-  display: flex;
-  align-items: start;
-}
+
 .hero-section .hero-contant-container .hero-content p {
   color: white;
   width: 60%;
@@ -137,90 +110,213 @@
   font-size: 16px;
   padding-left: 30px;
   color: black;
+  overflow: hidden;
 }
 .tokenomics-container .tokenomics-content .adress {
   background-color: orangered;
-  padding: 10px ;
+  padding: 10px;
   margin-top: 30px;
-  font-size: 22px;
 }
-.tokenomics-container .tokenomics-content h2{
+.tokenomics-container .tokenomics-content h2 {
   font-size: 20px;
-
 }
-.tokenomics-container .tokenomics-content .supply{
-    font-size: 20px;
-    color: black;
-}
-.tokenomics-container .tokenomics-content{
-    padding: 10px 30px;
-    border-radius: 20px;
-    background-color: white;
-    color: orangered;
-    border: 2px solid black;
-    padding-right: 20px;
-    padding-bottom: 30px;
-}
-.tokenomics-container .tokenomics-content button {
-    margin-top: 40px;
-   
-}
-
-.tokenomics-container .tokenomics-content button a{
-  text-decoration: none;
-  padding: 14px 30px;
+.tokenomics-container .tokenomics-content {
+  padding: 10px 30px;
   border-radius: 20px;
   background-color: white;
   color: orangered;
   border: 2px solid black;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+.tokenomics-container .tokenomics-content button {
+  padding: 18px 30px;
+  border-radius: 20px;
+  background-color: white;
+  color: orangered;
+  border: 2px solid black;
+  margin-top: 30px;
+  font-size: 18px;
   text-transform: capitalize;
   cursor: pointer;
-  font-size: 18px;
 }
-.tokenomics-container .tokenomics-content button a:hover{
-  color: white;
+.tokenomics-container .tokenomics-content button:hover {
   background-color: orangered;
+  color: white;
 }
 /* about-section */
-.about-section{
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
+.about-section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
-.about-section h2{
-    text-transform: uppercase;
-    font-size: 50px;
-   padding-top: 50px;
+.about-section h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-top: 50px;
 }
-.about-section p{
-    text-transform: capitalize;
-    font-size:22px;
-    padding: 20px 0;
-    line-height: 30px;
+.about-section p {
+  text-transform: capitalize;
+  font-size: 22px;
+  padding: 20px 0;
+  line-height: 30px;
 }
-.about-section span{
-    color: orangered;
-    text-transform: uppercase;
-    font-size: 22px;
-padding-bottom: 50px;
+.about-section span {
+  color: orangered;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding-bottom: 50px;
 }
 /* footer section */
-.footer-section{
-    background-color: black;
-    height: 50vh;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-section {
+  background-color: black;
+ padding: 80px 0;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-images{
-    margin-left: 100px;
+.footer-images {
+  margin-left: 100px;
 }
-.footer-content h2{
-    color: white;
+.footer-content h2 {
+  color: white;
+  padding-top: 30px;
+}
+.footer-content h4 {
+  color: white;
+  padding-top: 30px;
+}
+/* media query */
+
+
+@media screen and (max-width: 900px) {
+  .tokenomics-section .tokenomics-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-section p {
+    
+    font-size: 16px;
+   
+}
+}
+@media screen and (max-width: 500px) {
+  .footer-content h2 {
+    
+    font-size: 16px;
+   
+}
+}
+@media screen and (max-width: 500px) {
+  .footer-images {
+    margin-left: 30px;
+}
+}
+@media screen and (max-width: 900px) {
+  
+  .hero-content{
+    width: 100%;
+  }
+  #hero-contant p{
+    width: 80% ;
+    margin: 0 ;
+  }
+}
+@media screen and (max-width:900px) {
+ 
+  #hero-contant p{
+    font-size: 18px ;
+    padding-left: 90px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .tokenomics-section h2{
+    font-size: 30px;
+  }
+  .hero-section #heroes-images{
+    width: 30%;
+   }
+   .hero-section .hero-images .twitter-img img {
+    width: 100%;
     padding-top: 30px;
+    margin-left: 15px;
 }
-.footer-content h4{
-    color: white;
+}
+@media screen and (max-width:700px) {
+ 
+  #hero-contant p{
+    font-size: 14px ;
+    width: 100%;
+    overflow: hidden;
+  }
+  .tokenomics-section h2{
+    font-size: 30px;
+  }
+  .hero-section #heroes-images{
+    width: 35%;
+   }
+   .hero-section .hero-images .twitter-img img {
+    width: 100%;
     padding-top: 30px;
+    margin-left: 0px;
 }
+}
+
+@media screen and (max-width:500px) {
+ /* .hero-contant-container{
+  display: block;
+ } */
+  #hero-contant p{
+    font-size: 12px ;
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  .tokenomics-section h2{
+    font-size: 30px;
+  }
+  .hero-section #heroes-images{
+    width: 100%;
+   }
+   .hero-section .hero-images .twitter-img {
+    position: relative;
+    left: 8px;
+   }
+   .hero-section .hero-images .twitter-img img {
+    width: 130%;
+    padding-top: 30px;
+    margin-left: 0px;
+    overflow: hidden;
+}
+}
+
+
+@media screen and (max-width:410px) {
+  /* .hero-contant-container{
+   display: block;
+  } */
+   #hero-contant p{
+     font-size: 12px ;
+     width: 100%;
+     overflow: hidden;
+    
+   }
+   .tokenomics-section h2{
+     font-size: 30px;
+   }
+   .hero-section #heroes-images{
+     width: 100%;
+    }
+    .hero-section .hero-images .twitter-img {
+     position: relative;
+     left: -8px;
+    }
+    .hero-section .hero-images .twitter-img img {
+     width: 130%;
+     padding-top: 30px;
+     margin-left: 0px;
+     overflow: hidden;
+ }
+ }
